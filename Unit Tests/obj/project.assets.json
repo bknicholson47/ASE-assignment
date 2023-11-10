@@ -598,15 +598,6 @@
             "related": ".xml"
           }
         }
-      },
-      "Software assignment/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/Software assignment.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Software assignment.dll": {}
-        }
       }
     }
   },
@@ -2301,19 +2292,14 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
-    },
-    "Software assignment/1.0.0": {
-      "type": "project",
-      "path": "../Software assignment/Software assignment.csproj",
-      "msbuildProject": "../Software assignment/Software assignment.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "C:\\Users\\loli hentai\\source\\repos\\ASE-assignment\\Software assignment\\Software assignment\\Software assignment.csproj",
       "MSTest.TestAdapter >= 2.2.10",
       "MSTest.TestFramework >= 2.2.10",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
-      "Software assignment >= 1.0.0",
       "coverlet.collector >= 3.2.0"
     ]
   },
@@ -2396,5 +2382,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'C:\\Users\\loli hentai\\source\\repos\\ASE-assignment\\Software assignment\\Software assignment\\Software assignment.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "C:\\Users\\loli hentai\\source\\repos\\ASE-assignment\\Software assignment\\Software assignment\\Software assignment.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
