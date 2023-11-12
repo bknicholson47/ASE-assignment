@@ -16,6 +16,7 @@ namespace Software_assignment
         Bitmap myBitmap = new Bitmap(600, 500);
         Bitmap CursorBitmap = new Bitmap(600, 500);
         Graphics bmG;
+        userPen pen = new userPen(Color.Black,0,0,1);
         CommandBehavior C;
         public Form1()
         {
@@ -40,7 +41,7 @@ namespace Software_assignment
         {
             string mytext = textBox1.Text;
             string prog = richTextBox1.Text;
-            Parser Parse = new Parser(bmG);
+            Parser Parse = new Parser(bmG,pen);
             richTextBoxOutput.Text = richTextBoxOutput.Text + Parse.ParseCommand(mytext, prog, false);
             pictureBox1.Image = myBitmap;
 
@@ -53,7 +54,7 @@ namespace Software_assignment
         {
             string mytext = textBox1.Text;
             string prog = richTextBox1.Text;
-            Parser Parse = new Parser(bmG);
+            Parser Parse = new Parser(bmG,pen);
             richTextBoxOutput.Text = richTextBoxOutput.Text + Parse.ParseCommand("syntax", prog, false);
 
         }

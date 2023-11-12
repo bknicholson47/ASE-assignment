@@ -41,6 +41,16 @@ namespace Software_assignment
             this.y = y;
         }
         /// <summary>
+        /// Sets pen to user inpputed color for future operations.
+        /// </summary>
+        /// <param name="color">String parsed to color.</param>
+        public void setColor(string color)
+        {
+            Console.WriteLine(color);
+            this.colour = Color.FromName(color);
+            pen.Color = colour;
+        }
+        /// <summary>
         /// Draws line from pen position to drawto input position.
         /// </summary>
         /// <param name="g">The graphics context to draw to.</param>

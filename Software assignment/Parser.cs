@@ -17,10 +17,10 @@ namespace Software_assignment
         /// </summary>
         /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
-        public Parser(Graphics g)
+        public Parser(Graphics g, userPen p)
         {
             this.bmG = g;
-            this.pen = new userPen(Color.Black,0,0,1);
+            this.pen = p;
         }
         /// <summary>
         /// Parses the user inputted command and executes it returning nothing.
@@ -59,6 +59,9 @@ namespace Software_assignment
                     break;
                 case "drawto":
                     pen.drawTo(bmG, int.Parse(commands[1]), int.Parse(commands[2]));
+                    break;
+                case "pencolor":
+                    pen.setColor(commands[1]);
                     break;
                 case "run":
                     Console.WriteLine("run");
