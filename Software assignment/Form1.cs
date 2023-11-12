@@ -45,7 +45,7 @@ namespace Software_assignment
             string mytext = textBox1.Text;
             string prog = richTextBox1.Text;
             Parser Parse = new Parser(bmG);
-            Parse.ParseCommand(mytext, prog);
+            richTextBoxOutput.Text = richTextBoxOutput.Text + Parse.ParseCommand(mytext, prog, false);
             pictureBox1.Image = myBitmap;
 
         }
@@ -57,6 +57,10 @@ namespace Software_assignment
         /// <returns>Nothing.</returns>
         private void Syntax_Click(object sender, EventArgs e)
         {
+            string mytext = textBox1.Text;
+            string prog = richTextBox1.Text;
+            Parser Parse = new Parser(bmG);
+            richTextBoxOutput.Text = richTextBoxOutput.Text + Parse.ParseCommand("syntax", prog, false);
 
         }
 
