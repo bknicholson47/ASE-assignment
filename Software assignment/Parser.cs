@@ -12,7 +12,6 @@ namespace Software_assignment
     {
         Graphics bmG;
         userPen pen;
-        bool fill = true;
         /// <summary>
         /// Parses the user inputted command and executes it returning nothing.
         /// </summary>
@@ -36,39 +35,31 @@ namespace Software_assignment
             switch (commands[0].ToLower())
             {
                 case "circle":
-                    Console.WriteLine("circle");
                     Circle c = new Circle(int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
-                    if(!noDraw) c.draw(bmG, pen.getPen(), fill);
+                    if(!noDraw) c.draw(bmG, pen.getPen(), pen.getFill());
                     break;
                 case "triangle":
-                    Console.WriteLine("triangle");
-                    Circle d = new Circle(int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
-                    if (!noDraw) d.draw(bmG, pen.getPen(), fill);
+                    Triangle d = new Triangle(int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]), int.Parse(commands[4]), int.Parse(commands[5]), int.Parse(commands[6]));
+                    if (!noDraw) d.draw(bmG, pen.getPen(), pen.getFill());
                     break;
                 case "rectangle":
-                    Console.WriteLine("rectangle");
                     Rectangle e = new Rectangle(int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]), int.Parse(commands[4]));
-                    if (!noDraw) e.draw(bmG, pen.getPen(), fill);
-                    break;
-                case "shape":
-                    Console.WriteLine("shape");
-                    Circle f = new Circle(int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
-                    if (!noDraw) f.draw(bmG, pen.getPen(), fill);
+                    if (!noDraw) e.draw(bmG, pen.getPen(), pen.getFill());
                     break;
                 case "positionpen":
-                    pen.positionPen(int.Parse(commands[1]), int.Parse(commands[2]));
+                    if (!noDraw) pen.positionPen(int.Parse(commands[1]), int.Parse(commands[2]));
                     break;
                 case "drawto":
-                    pen.drawTo(bmG, int.Parse(commands[1]), int.Parse(commands[2]));
+                    if (!noDraw) pen.drawTo(bmG, int.Parse(commands[1]), int.Parse(commands[2]));
                     break;
                 case "pencolor":
-                    pen.setColor(commands[1]);
+                    if (!noDraw) pen.setColor(commands[1]);
                     break;
                 case "reset":
-                    pen.positionPen(0, 0);
+                    if (!noDraw) pen.positionPen(0, 0);
                     break;
                 case "clear":
-                    bmG.Clear(Color.White);
+                    if (!noDraw) bmG.Clear(Color.White);
                     break;
                 case "fill":
                     if (commands.Length < 2 | commands.Length > 2) {
@@ -78,10 +69,10 @@ namespace Software_assignment
                     switch (commands[1])
                     {
                         case "on":
-                            fill = true;
+                            pen.setFill(true);
                             break;
                         case "off":
-                            fill = false;
+                            pen.setFill(false);
                             break;
                         default:
                             output = output + "\n" + commands[1] + " not recognised, valid options are [on|off]";
@@ -89,7 +80,6 @@ namespace Software_assignment
                     }
                     break;
                 case "run":
-                    Console.WriteLine("run");
                     String[] runCommands = prog.Split('\n');
                     for (global::System.Int32 j = 0; j < runCommands.Length; j++)
                     {
@@ -97,7 +87,6 @@ namespace Software_assignment
                     }
                     break;
                 case "syntax":
-                    Console.WriteLine("syntax");
                     String[] syntaxCommands = prog.Split('\n');
                     for (global::System.Int32 j = 0; j < syntaxCommands.Length; j++)
                     {

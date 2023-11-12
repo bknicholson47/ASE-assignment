@@ -16,7 +16,7 @@ namespace Software_assignment
         Bitmap myBitmap = new Bitmap(600, 500);
         Bitmap CursorBitmap = new Bitmap(600, 500);
         Graphics bmG;
-        userPen pen = new userPen(Color.Black,0,0,1);
+        userPen pen = new userPen(Color.Black,0,0,1,true);
         CommandBehavior C;
         public Form1()
         {

@@ -14,6 +14,7 @@ namespace Software_assignment
         protected Color colour;
         protected int x, y;
         protected int radius;
+        protected bool fill;
         System.Drawing.Pen pen;
         /// <summary>
         /// Parses the user inputted command and executes it returning nothing.
@@ -21,7 +22,7 @@ namespace Software_assignment
         /// <param name="color">The pen's colour</param>
         /// <param name="x">The pen's x pos.</param>
         /// <param name="y">The pen's y pos.</param>
-        public userPen(Color colour, int x, int y, int radius)
+        public userPen(Color colour, int x, int y, int radius, bool fill)
         {
 
             this.colour = colour;
@@ -29,6 +30,7 @@ namespace Software_assignment
             this.y = y;
             this.radius = radius;
             this.pen = new System.Drawing.Pen(colour);
+            this.fill = fill;
         }
         /// <summary>
         /// Positions pen to user inpputed position.
@@ -65,6 +67,14 @@ namespace Software_assignment
         public Pen getPen()
         {
             return pen;
+        }
+        public bool getFill()
+        {
+            return fill;
+        }
+        public void setFill(bool fill)
+        {
+            this.fill = fill;
         }
 
         public override string ToString()
