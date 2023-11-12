@@ -10,8 +10,6 @@ namespace Software_assignment
 {
     public abstract class Shape
     {
-
-        protected Color colour; //shape's colour
         protected int x, y; //not I could use c# properties for this
 
         /// <summary>
@@ -19,10 +17,8 @@ namespace Software_assignment
         /// </summary>
         /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
-        public Shape(Color colour, int x, int y)
+        public Shape( int x, int y)
         {
-
-            this.colour = colour; //shape's colour
             this.x = x; //its x pos
             this.y = y; //its y pos
             //can't provide anything else as "shape" is too general
@@ -33,7 +29,7 @@ namespace Software_assignment
         /// </summary>
         /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
-        public abstract void draw(Graphics g,bool fill); //any derrived class must implement this method
+        public abstract void draw(Graphics g, Pen p, bool fill); //any derrived class must implement this method
 
         public override string ToString()
         {

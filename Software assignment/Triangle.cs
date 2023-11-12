@@ -17,7 +17,7 @@ namespace Software_assignment
         /// </summary>
         /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
-        public Triangle(Color colour, int x, int y, int length, int z) : base(colour, x, y) 
+        public Triangle(int x, int y, int length, int z) : base(x, y) 
         { 
 
         }
@@ -27,12 +27,11 @@ namespace Software_assignment
         /// </summary>
         /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
-        public override void draw(Graphics g, bool fill)
+        public override void draw(Graphics g, Pen p, bool fill)
         {
-            Pen p = new Pen(Color.Black, 2);
             if (fill)
             {
-                SolidBrush b = new SolidBrush(colour);
+                SolidBrush b = new SolidBrush(p.Color);
             }
             //g.DrawPolygon(b, new Point)
         }

@@ -62,6 +62,10 @@ namespace Software_assignment
             this.x = x2;
             this.y = y2;
         }
+        public Pen getPen()
+        {
+            return pen;
+        }
 
         public override string ToString()
         {

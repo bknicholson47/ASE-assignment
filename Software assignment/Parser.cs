@@ -37,23 +37,23 @@ namespace Software_assignment
             {
                 case "circle":
                     Console.WriteLine("circle");
-                    Circle c = new Circle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
-                    if(!noDraw) c.draw(bmG, fill);
+                    Circle c = new Circle(int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
+                    if(!noDraw) c.draw(bmG, pen.getPen(), fill);
                     break;
                 case "triangle":
                     Console.WriteLine("triangle");
-                    Circle d = new Circle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
-                    if (!noDraw) d.draw(bmG, fill);
+                    Circle d = new Circle(int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
+                    if (!noDraw) d.draw(bmG, pen.getPen(), fill);
                     break;
                 case "rectangle":
                     Console.WriteLine("rectangle");
-                    Rectangle e = new Rectangle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]), int.Parse(commands[4]));
-                    if (!noDraw) e.draw(bmG, fill);
+                    Rectangle e = new Rectangle(int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]), int.Parse(commands[4]));
+                    if (!noDraw) e.draw(bmG, pen.getPen(), fill);
                     break;
                 case "shape":
                     Console.WriteLine("shape");
-                    Circle f = new Circle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
-                    if (!noDraw) f.draw(bmG, fill);
+                    Circle f = new Circle(int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
+                    if (!noDraw) f.draw(bmG, pen.getPen(), fill);
                     break;
                 case "positionpen":
                     pen.positionPen(int.Parse(commands[1]), int.Parse(commands[2]));

@@ -18,7 +18,7 @@ namespace Software_assignment
         /// </summary>
         /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
-        public Circle(Color colour, int x, int y, int radius) : base(colour, x, y)
+        public Circle(int x, int y, int radius) : base(x, y)
         {
 
             this.radius = radius; //the only thingthat is different from shape
@@ -30,12 +30,10 @@ namespace Software_assignment
         /// </summary>
         /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
-        public override void draw(Graphics g, bool fill)
+        public override void draw(Graphics g, Pen p, bool fill)
         {
-
-            Pen p = new Pen(Color.Black, 2);
             if (fill) {
-                SolidBrush b = new SolidBrush(colour);
+                SolidBrush b = new SolidBrush(p.Color);
                 g.FillEllipse(b, x, y, radius * 2, radius * 2);
             }
             g.DrawEllipse(p, x, y, radius * 2, radius * 2);

@@ -17,7 +17,7 @@ namespace Software_assignment
         /// </summary>
         /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
-        public Rectangle(Color colour, int x, int y, int width, int height) : base(colour, x, y)
+        public Rectangle(int x, int y, int width, int height) : base(x, y)
         {
 
             this.width = width; //the only thingthat is different from shape
@@ -30,13 +30,11 @@ namespace Software_assignment
         /// </summary>
         /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
-        public override void draw(Graphics g, bool fill)
+        public override void draw(Graphics g, Pen p, bool fill)
         {
-            Pen p = new Pen(Color.Black, 2);
-
             if (fill)
             {
-                SolidBrush b = new SolidBrush(colour);
+                SolidBrush b = new SolidBrush(p.Color);
                 g.FillRectangle(b, x, y, width, height);
             }
             g.DrawRectangle(p, x, y, width, height);
