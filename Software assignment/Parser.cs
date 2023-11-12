@@ -12,6 +12,7 @@ namespace Software_assignment
     {
         Graphics bmG;
         userPen pen;
+        bool fill = true;
         /// <summary>
         /// Parses the user inputted command and executes it returning nothing.
         /// </summary>
@@ -62,6 +63,24 @@ namespace Software_assignment
                     break;
                 case "pencolor":
                     pen.setColor(commands[1]);
+                    break;
+                case "fill":
+                    if (commands.Length < 2 | commands.Length > 2) {
+                        output = output + "\nInvalid input '"+command+"', valid syntax is 'fill [on|off]'";
+                        break;
+                    }
+                    switch (commands[1])
+                    {
+                        case "on":
+                            fill = true;
+                            break;
+                        case "off":
+                            fill = false;
+                            break;
+                        default:
+                            output = output + "\n" + commands[1] + " not recognised, valid options are [on|off]";
+                            break;
+                    }
                     break;
                 case "run":
                     Console.WriteLine("run");
