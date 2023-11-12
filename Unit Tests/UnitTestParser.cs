@@ -4,8 +4,8 @@ using System.Drawing;
 namespace Unit_Tests
 {
     [TestClass]
-    public class UnitTestCircle
-    {
+    public class UnitTestParser
+    { 
         [TestMethod]
         public void isNotNull()
         {

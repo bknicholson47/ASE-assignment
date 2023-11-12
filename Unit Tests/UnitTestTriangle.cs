@@ -4,7 +4,7 @@ using System.Drawing;
 namespace Unit_Tests
 {
     [TestClass]
-    public class UnitTestCircle
+    public class UnitTestTriangle
     {
         [TestMethod]
         public void isNotNull()
