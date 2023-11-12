@@ -32,7 +32,7 @@ namespace Software_assignment
         /// <returns>Nothing.</returns>
         public override void draw(Graphics g)
         {
-            Pen p = new Pen(Color.Black, 2);
+            userPen p = new userPen(Color.Black, 2);
             SolidBrush b = new SolidBrush(colour);
             g.FillRectangle(b, x, y, width, height);
             g.DrawRectangle(p, x, y, width, height);

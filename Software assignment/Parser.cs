@@ -11,7 +11,7 @@ namespace Software_assignment
     internal class Parser
     {
         Graphics bmG;
-
+        userPen pen;
         /// <summary>
         /// Parses the user inputted command and executes it returning nothing.
         /// </summary>
@@ -20,6 +20,7 @@ namespace Software_assignment
         public Parser(Graphics g)
         {
             this.bmG = g;
+            this.pen = new userPen(Color.Black,0,0,1);
         }
         /// <summary>
         /// Parses the user inputted command and executes it returning nothing.

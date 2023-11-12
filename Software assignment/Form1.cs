@@ -24,10 +24,8 @@ namespace Software_assignment
         }
 
         /// <summary>
-        /// Parses the user inputted command and executes it returning nothing.
+        /// The Graphics box that the user draws on.
         /// </summary>
-        /// <param name="command">String command from user input box.</param>
-        /// <returns>Nothing.</returns>
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
@@ -36,10 +34,8 @@ namespace Software_assignment
         }
 
         /// <summary>
-        /// Parses the user inputted command and executes it returning nothing.
+        /// The run button for the command line.
         /// </summary>
-        /// <param name="command">String command from user input box.</param>
-        /// <returns>Nothing.</returns>
         private void Run_Click(object sender, EventArgs e)
         {
             string mytext = textBox1.Text;
@@ -51,10 +47,8 @@ namespace Software_assignment
         }
 
         /// <summary>
-        /// Parses the user inputted command and executes it returning nothing.
+        /// The button for syntax checking.
         /// </summary>
-        /// <param name="command">String command from user input box.</param>
-        /// <returns>Nothing.</returns>
         private void Syntax_Click(object sender, EventArgs e)
         {
             string mytext = textBox1.Text;
@@ -63,33 +57,35 @@ namespace Software_assignment
             richTextBoxOutput.Text = richTextBoxOutput.Text + Parse.ParseCommand("syntax", prog, false);
 
         }
-
-        /// <summary>
-        /// Parses the user inputted command and executes it returning nothing.
-        /// </summary>
-        /// <param name="command">String command from user input box.</param>
-        /// <returns>Nothing.</returns>
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
-
+        /// <summary>
+        /// The button that opens the save file dialogue.
+        /// </summary>
         private void buttonSave_Click(object sender, EventArgs e)
         {
             saveFileDialog1.ShowDialog();  
         }
-
+        /// <summary>
+        /// The button that opens the load file dialogue.
+        /// </summary>
         private void buttonLoad_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
         }
-
+        /// <summary>
+        /// Opens the file from the load file dialogue.
+        /// </summary>
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
             Console.WriteLine(openFileDialog1.FileName);
             richTextBox1.Text = File.ReadAllText(openFileDialog1.FileName);
         }
-
+        /// <summary>
+        /// Saves the file to the save file dialogue address.
+        /// </summary>
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
             Console.WriteLine(saveFileDialog1.FileName);

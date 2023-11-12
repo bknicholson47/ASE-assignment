@@ -43,7 +43,7 @@
             // 
             // Run
             // 
-            this.Run.Location = new System.Drawing.Point(10, 581);
+            this.Run.Location = new System.Drawing.Point(386, 547);
             this.Run.Name = "Run";
             this.Run.Size = new System.Drawing.Size(75, 23);
             this.Run.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             // Syntax
             // 
-            this.Syntax.Location = new System.Drawing.Point(113, 581);
+            this.Syntax.Location = new System.Drawing.Point(467, 547);
             this.Syntax.Name = "Syntax";
             this.Syntax.Size = new System.Drawing.Size(75, 23);
             this.Syntax.TabIndex = 1;
@@ -72,7 +72,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(11, 12);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(531, 500);
             this.richTextBox1.TabIndex = 3;
@@ -80,9 +80,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(11, 543);
+            this.textBox1.Location = new System.Drawing.Point(12, 549);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(398, 20);
+            this.textBox1.Size = new System.Drawing.Size(368, 20);
             this.textBox1.TabIndex = 4;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -117,10 +117,10 @@
             // 
             // richTextBoxOutput
             // 
-            this.richTextBoxOutput.Location = new System.Drawing.Point(11, 611);
+            this.richTextBoxOutput.Location = new System.Drawing.Point(12, 576);
             this.richTextBoxOutput.Name = "richTextBoxOutput";
             this.richTextBoxOutput.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBoxOutput.Size = new System.Drawing.Size(531, 96);
+            this.richTextBoxOutput.Size = new System.Drawing.Size(530, 96);
             this.richTextBoxOutput.TabIndex = 7;
             this.richTextBoxOutput.Text = "";
             // 
@@ -128,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1210, 723);
+            this.ClientSize = new System.Drawing.Size(1210, 687);
             this.Controls.Add(this.richTextBoxOutput);
             this.Controls.Add(this.buttonLoad);
             this.Controls.Add(this.buttonSave);
