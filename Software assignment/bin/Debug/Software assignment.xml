@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Software assignment</name>
+    </assembly>
+    <members>
+        <member name="M:Software_assignment.userPen.#ctor(System.Drawing.Color,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Initialises userpen parameters
+            </summary>
+            <param name="color">The pen's colour</param>
+            <param name="x">The pen's x pos.</param>
+            <param name="y">The pen's y pos.</param>
+        </member>
+        <member name="M:Software_assignment.userPen.positionPen(System.Int32,System.Int32)">
+            <summary>
+            Positions pen to user inpputed position.
+            </summary>
+            <param name="x">The pen's x pos to set.</param>
+            <param name="y">The pen's y pos to set.</param>
+        </member>
+        <member name="M:Software_assignment.userPen.setColor(System.String)">
+            <summary>
+            Sets pen to user inpputed color for future operations.
+            </summary>
+            <param name="color">String parsed to color.</param>
+        </member>
+        <member name="M:Software_assignment.userPen.drawTo(System.Drawing.Graphics,System.Int32,System.Int32)">
+            <summary>
+            Draws line from pen position to drawto input position.
+            </summary>
+            <param name="g">The graphics context to draw to.</param>
+            <param name="x2">The pen's x pos to draw to.</param>
+            <param name="y2">The pen's y pos to draw to.</param>
+        </member>
+        <member name="M:Software_assignment.userPen.getPen">
+            <summary>
+            Gets pen object, usually for handing to draw functions.
+            </summary>
+            <returns>Pen object</returns>
+        </member>
+        <member name="M:Software_assignment.userPen.getFill">
+            <summary>
+            Gets fill bool state.
+            </summary>
+            <returns>Fill state</returns>
+        </member>
+        <member name="M:Software_assignment.userPen.setFill(System.Boolean)">
+            <summary>
+            Sets pen to user inpputed color for future operations.
+            </summary>
+            <param name="fill">Bool state to set fill to.</param>
+        </member>
+        <member name="M:Software_assignment.Circle.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes circle parameters.
+            </summary>
+            <returns>Nothing.</returns>
+        </member>
+        <member name="M:Software_assignment.Circle.draw(System.Drawing.Graphics,System.Drawing.Pen,System.Boolean)">
+            <summary>
+            Creates circle based on parameters.
+            </summary>
+            <param name="g">The Graphics context.</param>
+            <param name="p">The pen to use.</param>
+            <param name="fill">Whether to fill.</param>
+        </member>
+        <member name="M:Software_assignment.Form1.pictureBox1_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            The Graphics box that the user draws on.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.Form1.Run_Click(System.Object,System.EventArgs)">
+            <summary>
+            The run button for the command line.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.Form1.Syntax_Click(System.Object,System.EventArgs)">
+            <summary>
+            The button for syntax checking.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.Form1.buttonSave_Click(System.Object,System.EventArgs)">
+            <summary>
+            The button that opens the save file dialogue.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.Form1.buttonLoad_Click(System.Object,System.EventArgs)">
+            <summary>
+            The button that opens the load file dialogue.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.Form1.openFileDialog1_FileOk(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Opens the file from the load file dialogue.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.Form1.saveFileDialog1_FileOk(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Saves the file to the save file dialogue address.
+            </summary>
+        </member>
+        <member name="F:Software_assignment.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Software_assignment.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.Parser.#ctor(System.Drawing.Graphics,Software_assignment.userPen)">
+            <summary>
+            Parses the user inputted command and executes it returning nothing.
+            </summary>
+            <param name="command">String command from user input box.</param>
+            <returns>Nothing.</returns>
+        </member>
+        <member name="M:Software_assignment.Parser.ParseCommand(System.String,System.String,System.Boolean)">
+            <summary>
+            Parses the user inputted command and executes it returning nothing.
+            </summary>
+            <param name="command">String command from user input box.</param>
+            <returns>Output log.</returns>
+        </member>
+        <member name="M:Software_assignment.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.Rectangle.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes rectangle parameters.
+            </summary>
+            <returns>Nothing.</returns>
+        </member>
+        <member name="M:Software_assignment.Rectangle.draw(System.Drawing.Graphics,System.Drawing.Pen,System.Boolean)">
+            <summary>
+            Creates rectangle based on parameters.
+            </summary>
+            <param name="g">The Graphics context.</param>
+            <param name="p">The pen to use.</param>
+            <param name="fill">Whether to fill.</param>
+            <returns>Nothing.</returns>
+        </member>
+        <member name="M:Software_assignment.Shape.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Abstract initialization
+            </summary>
+        </member>
+        <member name="M:Software_assignment.Shape.draw(System.Drawing.Graphics,System.Drawing.Pen,System.Boolean)">
+            <summary>
+            Abstract draw function.
+            </summary>
+            <param name="g">The Graphics context.</param>
+            <param name="p">The pen to use.</param>
+            <param name="fill">Whether to fill.</param>
+        </member>
+        <member name="M:Software_assignment.Triangle.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes triangle parameters.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.Triangle.draw(System.Drawing.Graphics,System.Drawing.Pen,System.Boolean)">
+            <summary>
+            Creates triangle based on parameters.
+            </summary>
+            <param name="g">The Graphics context.</param>
+            <param name="p">The pen to use.</param>
+            <param name="fill">Whether to fill.</param>
+        </member>
+        <member name="T:Software_assignment.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Software_assignment.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Software_assignment.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

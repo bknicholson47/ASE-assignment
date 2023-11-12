@@ -47,7 +47,7 @@ namespace Software_assignment
                     if (!noDraw) e.draw(bmG, pen.getPen(), pen.getFill());
                     break;
                 case "positionpen":
-                    if (!noDraw) pen.positionPen(int.Parse(commands[1]), int.Parse(commands[2]));
+                    if (!noDraw) pen.moveTo(int.Parse(commands[1]), int.Parse(commands[2]));
                     break;
                 case "drawto":
                     if (!noDraw) pen.drawTo(bmG, int.Parse(commands[1]), int.Parse(commands[2]));
@@ -56,7 +56,7 @@ namespace Software_assignment
                     if (!noDraw) pen.setColor(commands[1]);
                     break;
                 case "reset":
-                    if (!noDraw) pen.positionPen(0, 0);
+                    if (!noDraw) pen.moveTo(0, 0);
                     break;
                 case "clear":
                     if (!noDraw) bmG.Clear(Color.White);

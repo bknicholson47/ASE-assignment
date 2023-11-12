@@ -37,7 +37,7 @@ namespace Software_assignment
         /// </summary>
         /// <param name="x">The pen's x pos to set.</param>
         /// <param name="y">The pen's y pos to set.</param>
-        public void positionPen(int x, int y)
+        public void moveTo(int x, int y)
         {
             this.x = x;
             this.y = y;

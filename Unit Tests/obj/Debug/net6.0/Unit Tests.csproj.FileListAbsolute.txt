@@ -100,3 +100,11 @@ D:\Users\loli hentai\Desktop\Software assigment\Software assignment\Unit Tests\o
 D:\Users\loli hentai\Desktop\Software assigment\Software assignment\Unit Tests\obj\Debug\net6.0\Unit Tests.pdb
 D:\Users\loli hentai\Desktop\Software assigment\Software assignment\Unit Tests\obj\Debug\net6.0\Unit Tests.genruntimeconfig.cache
 D:\Users\loli hentai\Desktop\Software assigment\Software assignment\Unit Tests\obj\Debug\net6.0\ref\Unit Tests.dll
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net6.0\Unit Tests.csproj.AssemblyReference.cache
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net6.0\Unit Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net6.0\Unit Tests.AssemblyInfoInputs.cache
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net6.0\Unit Tests.AssemblyInfo.cs
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net6.0\Unit Tests.csproj.CoreCompileInputs.cache
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net6.0\Unit Tests.dll
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net6.0\refint\Unit Tests.dll
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net6.0\Unit Tests.pdb

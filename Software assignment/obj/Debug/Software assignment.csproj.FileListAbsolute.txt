@@ -39,3 +39,4 @@ C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software as
 C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\obj\Debug\Software assignment.csproj.CoreCompileInputs.cache
 C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\obj\Debug\Software assignment.exe
 C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\obj\Debug\Software assignment.pdb
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\bin\Debug\Software assignment.xml
