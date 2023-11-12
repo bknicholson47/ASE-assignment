@@ -64,6 +64,12 @@ namespace Software_assignment
                 case "pencolor":
                     pen.setColor(commands[1]);
                     break;
+                case "reset":
+                    pen.positionPen(0, 0);
+                    break;
+                case "clear":
+                    bmG.Clear(Color.White);
+                    break;
                 case "fill":
                     if (commands.Length < 2 | commands.Length > 2) {
                         output = output + "\nInvalid input '"+command+"', valid syntax is 'fill [on|off]'";
