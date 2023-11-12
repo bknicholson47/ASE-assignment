@@ -20,7 +20,7 @@ namespace Unit_Tests
             p.ParseCommand("fill off", "", false);
 
             // assert
-            Assert.AreNotEqual(false, pen.getFill);
+            Assert.AreEqual(false, pen.getFill());
         }
     }
 }
