@@ -11,15 +11,16 @@ namespace Unit_Tests
         {
             // arrange
             Bitmap myBitmap = new Bitmap(600, 500);
-            userPen pen = new userPen(Color.Black, 0, 0, 1, true);
             Graphics bmG;
             bmG = Graphics.FromImage(myBitmap);
+            userPen pen = new userPen(Color.Black, 0, 0, 1, true);
+            Parser p = new Parser(bmG, pen);
 
             // act
-            Parser p = new Parser(bmG,pen);
+            p.ParseCommand("fill off", "", false);
 
             // assert
-            Assert.IsNotNull(p);
+            Assert.AreNotEqual(false, pen.getFill);
         }
     }
 }
