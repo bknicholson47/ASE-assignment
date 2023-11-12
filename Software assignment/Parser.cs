@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Software_assignment
 {
-    internal class Parser
+    public class Parser
     {
         Graphics bmG;
         userPen pen;

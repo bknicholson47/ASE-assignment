@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Software_assignment
 {
-    class Triangle : Shape
+    public class Triangle : Shape
     {
         protected int x2;
         protected int y2;

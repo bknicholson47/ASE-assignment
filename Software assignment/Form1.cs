@@ -27,7 +27,7 @@ namespace Software_assignment
         /// <summary>
         /// The Graphics box that the user draws on.
         /// </summary>
-        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        public void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
             g.DrawImageUnscaled(myBitmap, 0, 0);

@@ -203,3 +203,6 @@ C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\
 C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net6.0\Unit Tests.csproj.CopyComplete
 C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net6.0\Unit Tests.genruntimeconfig.cache
 C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net6.0\ref\Unit Tests.dll
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll

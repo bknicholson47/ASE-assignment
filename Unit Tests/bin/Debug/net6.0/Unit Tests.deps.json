@@ -11,6 +11,7 @@
           "MSTest.TestAdapter": "2.2.10",
           "MSTest.TestFramework": "2.2.10",
           "Microsoft.NET.Test.Sdk": "17.5.0",
+          "System.Drawing.Common": "8.0.0-rc.2.23479.14",
           "coverlet.collector": "3.2.0",
           "Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions": "14.0.0.0"
         },
@@ -282,6 +283,22 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0-rc.2.23479.6": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.47906"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.47906"
+          }
+        }
+      },
       "MSTest.TestAdapter/2.2.10": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
@@ -353,6 +370,17 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "runtime.native.System": "4.3.0"
+        }
+      },
+      "System.Drawing.Common/8.0.0-rc.2.23479.14": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0-rc.2.23479.6"
+        },
+        "runtime": {
+          "lib/net6.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.47914"
+          }
         }
       },
       "System.Globalization/4.3.0": {
@@ -500,6 +528,13 @@
       "path": "microsoft.testplatform.testhost/17.5.0",
       "hashPath": "microsoft.testplatform.testhost.17.5.0.nupkg.sha512"
     },
+    "Microsoft.Win32.SystemEvents/8.0.0-rc.2.23479.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t83wew4bAz1UTsbLX8CQhJEY0+Q40xN1/yKJ0RL8Bphjk/KzK/jjc5+CdPnJGP4oLlTmo5p5jZp3NnrQ6V/cAw==",
+      "path": "microsoft.win32.systemevents/8.0.0-rc.2.23479.6",
+      "hashPath": "microsoft.win32.systemevents.8.0.0-rc.2.23479.6.nupkg.sha512"
+    },
     "MSTest.TestAdapter/2.2.10": {
       "type": "package",
       "serviceable": true,
@@ -562,6 +597,13 @@
       "sha512": "sha512-VnYp1NxGx8Ww731y2LJ1vpfb/DKVNKEZ8Jsh5SgQTZREL/YpWRArgh9pI8CDLmgHspZmLL697CaLvH85qQpRiw==",
       "path": "system.diagnostics.tracesource/4.3.0",
       "hashPath": "system.diagnostics.tracesource.4.3.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/8.0.0-rc.2.23479.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kdIRPl2+A6F6QxV48fF1dXvB2+K+5nDuKxhYydgT8X7HWpCnlr2CKptzyKMkXOGFAXOFsiNByr4LBWWLOqOfYA==",
+      "path": "system.drawing.common/8.0.0-rc.2.23479.14",
+      "hashPath": "system.drawing.common.8.0.0-rc.2.23479.14.nupkg.sha512"
     },
     "System.Globalization/4.3.0": {
       "type": "package",

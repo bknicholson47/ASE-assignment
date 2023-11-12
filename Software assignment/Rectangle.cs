@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Software_assignment
 {
-    class Rectangle : Shape
+    public class Rectangle : Shape
     {
         protected int width, height;
 
