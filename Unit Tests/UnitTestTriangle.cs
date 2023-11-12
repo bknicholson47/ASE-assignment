@@ -13,12 +13,15 @@ namespace Unit_Tests
             var i = 50;
             var f = 50;
             var e = 50;
+            var i2 = 50;
+            var f2 = 50;
+            var e2 = 50;
 
             // act
-            Circle c = new Circle(i, f, e);
-
+            Triangle t = new Triangle(i, f, e, i2, f2, e2);
+            
             // assert
-            Assert.IsNotNull(c);
+            Assert.IsNotNull(t);
         }
     }
 }
