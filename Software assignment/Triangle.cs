@@ -30,7 +30,10 @@ namespace Software_assignment
         public override void draw(Graphics g, bool fill)
         {
             Pen p = new Pen(Color.Black, 2);
-            SolidBrush b = new SolidBrush(colour);
+            if (fill)
+            {
+                SolidBrush b = new SolidBrush(colour);
+            }
             //g.DrawPolygon(b, new Point)
         }
     }

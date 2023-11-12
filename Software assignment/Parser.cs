@@ -47,7 +47,7 @@ namespace Software_assignment
                     break;
                 case "rectangle":
                     Console.WriteLine("rectangle");
-                    Circle e = new Circle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
+                    Rectangle e = new Rectangle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]), int.Parse(commands[4]));
                     if (!noDraw) e.draw(bmG, fill);
                     break;
                 case "shape":

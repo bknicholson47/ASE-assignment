@@ -33,8 +33,12 @@ namespace Software_assignment
         public override void draw(Graphics g, bool fill)
         {
             Pen p = new Pen(Color.Black, 2);
-            SolidBrush b = new SolidBrush(colour);
-            g.FillRectangle(b, x, y, width, height);
+
+            if (fill)
+            {
+                SolidBrush b = new SolidBrush(colour);
+                g.FillRectangle(b, x, y, width, height);
+            }
             g.DrawRectangle(p, x, y, width, height);
         }
     }
