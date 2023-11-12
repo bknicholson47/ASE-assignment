@@ -38,22 +38,22 @@ namespace Software_assignment
                 case "circle":
                     Console.WriteLine("circle");
                     Circle c = new Circle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
-                    if(!noDraw) c.draw(bmG);
+                    if(!noDraw) c.draw(bmG, fill);
                     break;
                 case "triangle":
                     Console.WriteLine("triangle");
                     Circle d = new Circle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
-                    if (!noDraw) d.draw(bmG);
+                    if (!noDraw) d.draw(bmG, fill);
                     break;
                 case "rectangle":
                     Console.WriteLine("rectangle");
                     Circle e = new Circle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
-                    if (!noDraw) e.draw(bmG);
+                    if (!noDraw) e.draw(bmG, fill);
                     break;
                 case "shape":
                     Console.WriteLine("shape");
                     Circle f = new Circle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
-                    if (!noDraw) f.draw(bmG);
+                    if (!noDraw) f.draw(bmG, fill);
                     break;
                 case "positionpen":
                     pen.positionPen(int.Parse(commands[1]), int.Parse(commands[2]));

@@ -33,7 +33,7 @@ namespace Software_assignment
         /// </summary>
         /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
-        public abstract void draw(Graphics g); //any derrived class must implement this method
+        public abstract void draw(Graphics g,bool fill); //any derrived class must implement this method
 
         public override string ToString()
         {

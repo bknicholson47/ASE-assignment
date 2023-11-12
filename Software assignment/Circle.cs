@@ -30,12 +30,14 @@ namespace Software_assignment
         /// </summary>
         /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
-        public override void draw(Graphics g)
+        public override void draw(Graphics g, bool fill)
         {
 
             Pen p = new Pen(Color.Black, 2);
-            SolidBrush b = new SolidBrush(colour);
-            g.FillEllipse(b, x, y, radius * 2, radius * 2);
+            if (fill) {
+                SolidBrush b = new SolidBrush(colour);
+                g.FillEllipse(b, x, y, radius * 2, radius * 2);
+            }
             g.DrawEllipse(p, x, y, radius * 2, radius * 2);
 
         }
