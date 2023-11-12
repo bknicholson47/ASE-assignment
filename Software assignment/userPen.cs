@@ -30,14 +30,27 @@ namespace Software_assignment
             this.radius = radius;
             this.pen = new System.Drawing.Pen(colour);
         }
+        /// <summary>
+        /// Positions pen to user inpputed position.
+        /// </summary>
+        /// <param name="x">The pen's x pos to set.</param>
+        /// <param name="y">The pen's y pos to set.</param>
         public void positionPen(int x, int y)
         {
             this.x = x;
             this.y = y;
         }
-        public void drawTo(Graphics g, int x, int y)
+        /// <summary>
+        /// Draws line from pen position to drawto input position.
+        /// </summary>
+        /// <param name="g">The graphics context to draw to.</param>
+        /// <param name="x">The pen's x pos to draw to.</param>
+        /// <param name="y">The pen's y pos to draw to.</param>
+        public void drawTo(Graphics g, int x2, int y2)
         {
-            g.DrawLine(pen, new Point(this.x, this.y), new Point(x, y));
+            g.DrawLine(pen, new Point(x, y), new Point(x2, y2));
+            this.x = x2;
+            this.y = y2;
         }
 
         public override string ToString()

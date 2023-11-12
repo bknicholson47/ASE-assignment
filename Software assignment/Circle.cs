@@ -33,7 +33,7 @@ namespace Software_assignment
         public override void draw(Graphics g)
         {
 
-            userPen p = new userPen(Color.Black, 2);
+            Pen p = new Pen(Color.Black, 2);
             SolidBrush b = new SolidBrush(colour);
             g.FillEllipse(b, x, y, radius * 2, radius * 2);
             g.DrawEllipse(p, x, y, radius * 2, radius * 2);

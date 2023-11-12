@@ -32,7 +32,7 @@ namespace Software_assignment
             string output = "";
             Console.WriteLine (command);
             String[] commands = command.Split (' ');
-            switch (commands[0])
+            switch (commands[0].ToLower())
             {
                 case "circle":
                     Console.WriteLine("circle");
@@ -53,6 +53,12 @@ namespace Software_assignment
                     Console.WriteLine("shape");
                     Circle f = new Circle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
                     if (!noDraw) f.draw(bmG);
+                    break;
+                case "positionpen":
+                    pen.positionPen(int.Parse(commands[1]), int.Parse(commands[2]));
+                    break;
+                case "drawto":
+                    pen.drawTo(bmG, int.Parse(commands[1]), int.Parse(commands[2]));
                     break;
                 case "run":
                     Console.WriteLine("run");
