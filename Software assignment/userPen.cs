@@ -17,7 +17,7 @@ namespace Software_assignment
         protected bool fill;
         System.Drawing.Pen pen;
         /// <summary>
-        /// Parses the user inputted command and executes it returning nothing.
+        /// Initialises userpen parameters
         /// </summary>
         /// <param name="color">The pen's colour</param>
         /// <param name="x">The pen's x pos.</param>
@@ -56,22 +56,34 @@ namespace Software_assignment
         /// Draws line from pen position to drawto input position.
         /// </summary>
         /// <param name="g">The graphics context to draw to.</param>
-        /// <param name="x">The pen's x pos to draw to.</param>
-        /// <param name="y">The pen's y pos to draw to.</param>
+        /// <param name="x2">The pen's x pos to draw to.</param>
+        /// <param name="y2">The pen's y pos to draw to.</param>
         public void drawTo(Graphics g, int x2, int y2)
         {
             g.DrawLine(pen, new Point(x, y), new Point(x2, y2));
             this.x = x2;
             this.y = y2;
         }
+        /// <summary>
+        /// Gets pen object, usually for handing to draw functions.
+        /// </summary>
+        /// <returns>Pen object</returns>
         public Pen getPen()
         {
             return pen;
         }
+        /// <summary>
+        /// Gets fill bool state.
+        /// </summary>
+        /// <returns>Fill state</returns>
         public bool getFill()
         {
             return fill;
         }
+        /// <summary>
+        /// Sets pen to user inpputed color for future operations.
+        /// </summary>
+        /// <param name="fill">Bool state to set fill to.</param>
         public void setFill(bool fill)
         {
             this.fill = fill;

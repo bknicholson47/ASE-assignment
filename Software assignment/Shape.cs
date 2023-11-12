@@ -10,26 +10,24 @@ namespace Software_assignment
 {
     public abstract class Shape
     {
-        protected int x, y; //not I could use c# properties for this
+        protected int x, y;
 
         /// <summary>
-        /// Parses the user inputted command and executes it returning nothing.
+        /// Abstract initialization
         /// </summary>
-        /// <param name="command">String command from user input box.</param>
-        /// <returns>Nothing.</returns>
         public Shape( int x, int y)
         {
-            this.x = x; //its x pos
-            this.y = y; //its y pos
-            //can't provide anything else as "shape" is too general
+            this.x = x;
+            this.y = y;
         }
 
         /// <summary>
-        /// Parses the user inputted command and executes it returning nothing.
+        /// Abstract draw function.
         /// </summary>
-        /// <param name="command">String command from user input box.</param>
-        /// <returns>Nothing.</returns>
-        public abstract void draw(Graphics g, Pen p, bool fill); //any derrived class must implement this method
+        /// <param name="g">The Graphics context.</param>
+        /// <param name="p">The pen to use.</param>
+        /// <param name="fill">Whether to fill.</param>
+        public abstract void draw(Graphics g, Pen p, bool fill);
 
         public override string ToString()
         {

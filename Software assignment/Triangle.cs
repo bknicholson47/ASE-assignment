@@ -17,10 +17,8 @@ namespace Software_assignment
         protected int y3;
 
         /// <summary>
-        /// Parses the user inputted command and executes it returning nothing.
+        /// Initializes triangle parameters.
         /// </summary>
-        /// <param name="command">String command from user input box.</param>
-        /// <returns>Nothing.</returns>
         public Triangle(int x, int y, int x2, int y2, int x3, int y3) : base(x, y) 
         { 
             this.x = x;
@@ -32,10 +30,11 @@ namespace Software_assignment
         }
 
         /// <summary>
-        /// Parses the user inputted command and executes it returning nothing.
+        /// Creates triangle based on parameters.
         /// </summary>
-        /// <param name="command">String command from user input box.</param>
-        /// <returns>Nothing.</returns>
+        /// <param name="g">The Graphics context.</param>
+        /// <param name="p">The pen to use.</param>
+        /// <param name="fill">Whether to fill.</param>
         public override void draw(Graphics g, Pen p, bool fill)
         {
         PointF[] points = new PointF[3];

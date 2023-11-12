@@ -14,22 +14,22 @@ namespace Software_assignment
         protected int radius;
 
         /// <summary>
-        /// Parses the user inputted command and executes it returning nothing.
+        /// Initializes circle parameters.
         /// </summary>
-        /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
         public Circle(int x, int y, int radius) : base(x, y)
         {
 
-            this.radius = radius; //the only thingthat is different from shape
+            this.radius = radius;
         }
 
 
         /// <summary>
-        /// Parses the user inputted command and executes it returning nothing.
+        /// Creates circle based on parameters.
         /// </summary>
-        /// <param name="command">String command from user input box.</param>
-        /// <returns>Nothing.</returns>
+        /// <param name="g">The Graphics context.</param>
+        /// <param name="p">The pen to use.</param>
+        /// <param name="fill">Whether to fill.</param>
         public override void draw(Graphics g, Pen p, bool fill)
         {
             if (fill) {
@@ -40,7 +40,7 @@ namespace Software_assignment
 
         }
 
-        public override string ToString() //all classes inherit from object and ToString() is abstract in object
+        public override string ToString()
         {
             return base.ToString() + "  " + this.radius;
         }

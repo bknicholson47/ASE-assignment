@@ -13,9 +13,8 @@ namespace Software_assignment
         protected int width, height;
 
         /// <summary>
-        /// Parses the user inputted command and executes it returning nothing.
+        /// Initializes rectangle parameters.
         /// </summary>
-        /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
         public Rectangle(int x, int y, int width, int height) : base(x, y)
         {
@@ -26,9 +25,11 @@ namespace Software_assignment
 
 
         /// <summary>
-        /// Parses the user inputted command and executes it returning nothing.
+        /// Creates rectangle based on parameters.
         /// </summary>
-        /// <param name="command">String command from user input box.</param>
+        /// <param name="g">The Graphics context.</param>
+        /// <param name="p">The pen to use.</param>
+        /// <param name="fill">Whether to fill.</param>
         /// <returns>Nothing.</returns>
         public override void draw(Graphics g, Pen p, bool fill)
         {
