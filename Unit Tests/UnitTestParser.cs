@@ -10,15 +10,16 @@ namespace Unit_Tests
         public void isNotNull()
         {
             // arrange
-            var i = 50;
-            var f = 50;
-            var e = 50;
+            Bitmap myBitmap = new Bitmap(600, 500);
+            userPen pen = new userPen(Color.Black, 0, 0, 1, true);
+            Graphics bmG;
+            bmG = Graphics.FromImage(myBitmap);
 
             // act
-            Circle c = new Circle(i, f, e);
+            Parser p = new Parser(bmG,pen);
 
             // assert
-            Assert.IsNotNull(c);
+            Assert.IsNotNull(p);
         }
     }
 }
