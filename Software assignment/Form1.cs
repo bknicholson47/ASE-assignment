@@ -42,8 +42,9 @@ namespace Software_assignment
         private void Run_Click(object sender, EventArgs e)
         {
             string mytext = textBox1.Text;
+            string prog = richTextBox1.Text;
             Parser Parse = new Parser(bmG);
-            Parse.ParseCommand(mytext);
+            Parse.ParseCommand(mytext, prog);
             pictureBox1.Image = myBitmap;
 
         }

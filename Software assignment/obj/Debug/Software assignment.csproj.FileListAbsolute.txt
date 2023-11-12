@@ -29,3 +29,13 @@ D:\Users\loli hentai\Desktop\Software assigment\Software assignment\Software ass
 D:\Users\loli hentai\Desktop\Software assigment\Software assignment\Software assignment\obj\Debug\Software assignment.csproj.CoreCompileInputs.cache
 D:\Users\loli hentai\Desktop\Software assigment\Software assignment\Software assignment\obj\Debug\Software assignment.exe
 D:\Users\loli hentai\Desktop\Software assigment\Software assignment\Software assignment\obj\Debug\Software assignment.pdb
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\bin\Debug\Software assignment.exe.config
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\bin\Debug\Software assignment.exe
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\bin\Debug\Software assignment.pdb
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\obj\Debug\Software assignment.csproj.AssemblyReference.cache
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\obj\Debug\Software_assignment.Form1.resources
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\obj\Debug\Software_assignment.Properties.Resources.resources
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\obj\Debug\Software assignment.csproj.GenerateResource.cache
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\obj\Debug\Software assignment.csproj.CoreCompileInputs.cache
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\obj\Debug\Software assignment.exe
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Software assignment\obj\Debug\Software assignment.pdb

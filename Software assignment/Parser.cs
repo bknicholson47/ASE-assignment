@@ -25,17 +25,42 @@ namespace Software_assignment
         /// </summary>
         /// <param name="command">String command from user input box.</param>
         /// <returns>Nothing.</returns>
-        public void ParseCommand (string command)
+        public void ParseCommand (string command, string prog)
         {
             Console.WriteLine (command);
             String[] commands = command.Split (' ');
-            if (commands[0] == "circle")
+            switch (commands[0])
             {
-                int i = int.Parse(commands[1]);
-                int f = int.Parse(commands[2]);
-                int e = int.Parse(commands[3]);
-                Circle c = new Circle(Color.Blue, i, f, e);
-                c.draw(bmG);
+                case "circle":
+                    Console.WriteLine("circle");
+                    Circle c = new Circle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
+                    c.draw(bmG);
+                    break;
+                case "triangle":
+                    Console.WriteLine("triangle");
+                    Circle d = new Circle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
+                    d.draw(bmG);
+                    break;
+                case "rectangle":
+                    Console.WriteLine("rectangle");
+                    Circle e = new Circle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
+                    e.draw(bmG);
+                    break;
+                case "shape":
+                    Console.WriteLine("shape");
+                    Circle f = new Circle(Color.Blue, int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
+                    f.draw(bmG);
+                    break;
+                case "run":
+                    Console.WriteLine("run");
+                    String[] runCommands = prog.Split('\n');
+                    for (global::System.Int32 j = 0; j < runCommands.Length; j++)
+                    {
+                        ParseCommand(runCommands[j], "");
+                    }
+                    break;
+                default:
+                    break;
             }
         }
     }
