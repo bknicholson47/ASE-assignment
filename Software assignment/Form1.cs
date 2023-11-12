@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,6 +67,30 @@ namespace Software_assignment
         /// <returns>Nothing.</returns>
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.ShowDialog();  
+        }
+
+        private void buttonLoad_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+            Console.WriteLine(openFileDialog1.FileName);
+            richTextBox1.Text = File.ReadAllText(openFileDialog1.FileName);
+        }
+
+        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+            Console.WriteLine(saveFileDialog1.FileName);
+            File.WriteAllText(saveFileDialog1.FileName, richTextBox1.Text);
+
 
         }
     }
