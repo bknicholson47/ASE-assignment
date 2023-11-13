@@ -35,22 +35,89 @@ namespace Software_assignment
             switch (commands[0].ToLower())
             {
                 case "circle":
-                    Circle c = new Circle(int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]));
+                    if (commands.Length < 4|commands.Length > 4)
+                    {
+                        output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                        break;
+                    }
+                    int cx;
+                    int cy;
+                    int cr;
+                    if (!int.TryParse(commands[1], out cx)| !int.TryParse(commands[2], out cy) | !int.TryParse(commands[3], out cr))
+                    {
+                        output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                        break;
+                    }
+                    Circle c = new Circle(cx, cy, cr);
                     if(!noDraw) c.draw(bmG, pen.getPen(), pen.getFill());
                     break;
                 case "triangle":
-                    Triangle d = new Triangle(int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]), int.Parse(commands[4]), int.Parse(commands[5]), int.Parse(commands[6]));
+                    if (commands.Length < 7 | commands.Length > 7)
+                    {
+                        output = output + "\nInvalid input '" + command + "', valid syntax is 'triangle int int int int int int'";
+                        break;
+                    }
+                    int tx1;
+                    int ty1;
+                    int tx2;
+                    int ty2;
+                    int tx3;
+                    int ty3;
+                    if (!int.TryParse(commands[1], out tx1) | !int.TryParse(commands[2], out ty1) | !int.TryParse(commands[3], out tx2) | !int.TryParse(commands[4], out ty2) | !int.TryParse(commands[5], out tx3) | !int.TryParse(commands[6], out ty3))
+                    {
+                        output = output + "\nInvalid input '" + command + "', valid syntax is 'triangle int int int int int int'";
+                        break;
+                    }
+                    Triangle d = new Triangle(tx1, ty1, tx2, ty2, tx3, ty3);
                     if (!noDraw) d.draw(bmG, pen.getPen(), pen.getFill());
                     break;
                 case "rectangle":
-                    Rectangle e = new Rectangle(int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]), int.Parse(commands[4]));
+                    if (commands.Length < 5 | commands.Length > 5)
+                    {
+                        output = output + "\nInvalid input '" + command + "', valid syntax is 'rectangle int int int int'";
+                        break;
+                    }
+                    int rx;
+                    int ry;
+                    int rw;
+                    int rh;
+                    if (!int.TryParse(commands[1], out rx) | !int.TryParse(commands[2], out ry) | !int.TryParse(commands[3], out rw) | !int.TryParse(commands[4], out rh))
+                    {
+                        output = output + "\nInvalid input '" + command + "', valid syntax is 'rectangle int int int int'";
+                        break;
+                    }
+                    Rectangle e = new Rectangle(rx, ry, rw, rh);
                     if (!noDraw) e.draw(bmG, pen.getPen(), pen.getFill());
                     break;
                 case "moveto":
-                    if (!noDraw) pen.moveTo(int.Parse(commands[1]), int.Parse(commands[2]));
+                    if (commands.Length < 3 | commands.Length > 3)
+                    {
+                        output = output + "\nInvalid input '" + command + "', valid syntax is 'moveto int int'";
+                        break;
+                    }
+                    int mx;
+                    int my;
+                    if (!int.TryParse(commands[1], out mx) | !int.TryParse(commands[2], out my))
+                    {
+                        output = output + "\nInvalid input '" + command + "', valid syntax is 'moveto int int'";
+                        break;
+                    }
+                    if (!noDraw) pen.moveTo(mx, my);
                     break;
                 case "drawto":
-                    if (!noDraw) pen.drawTo(bmG, int.Parse(commands[1]), int.Parse(commands[2]));
+                    if (commands.Length < 3 | commands.Length > 3)
+                    {
+                        output = output + "\nInvalid input '" + command + "', valid syntax is 'moveto int int'";
+                        break;
+                    }
+                    int dx;
+                    int dy;
+                    if (!int.TryParse(commands[1], out dx) | !int.TryParse(commands[2], out dy))
+                    {
+                        output = output + "\nInvalid input '" + command + "', valid syntax is 'moveto int int'";
+                        break;
+                    }
+                    if (!noDraw) pen.drawTo(bmG, dx, dy);
                     break;
                 case "pencolor":
                     if (!noDraw) pen.setColor(commands[1]);
