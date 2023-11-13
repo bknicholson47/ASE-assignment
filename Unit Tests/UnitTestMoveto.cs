@@ -15,7 +15,6 @@ namespace Unit_Tests
             bmG = Graphics.FromImage(myBitmap);
             userPen pen = new userPen(Color.Black, 0, 0, 1, true);
             Parser p = new Parser(bmG, pen);
-            p.ParseCommand("moveto 50 50", "", false);
 
             Bitmap myBitmap2 = new Bitmap(600, 500);
             Graphics bmG2;
@@ -24,13 +23,11 @@ namespace Unit_Tests
             pen2.drawTo(bmG2, 25, 25);
 
             // act
-            p.ParseCommand("reset", "", false);
-            p.ParseCommand("drawto 25 25", "", false);
-
-
+            p.ParseCommand("moveto 50 50", "", false);
 
             // assert
-            Assert.AreEqual(myBitmap2.GetPixel(1, 1), myBitmap.GetPixel(1, 1));
+            p.ParseCommand("drawto 25 25", "", false);
+            Assert.AreNotEqual(myBitmap2.GetPixel(1, 1), myBitmap.GetPixel(1, 1));
         }
     }
 }
