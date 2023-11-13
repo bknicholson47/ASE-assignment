@@ -81,7 +81,6 @@ namespace Software_assignment
         /// </summary>
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            Console.WriteLine(openFileDialog1.FileName);
             richTextBox1.Text = File.ReadAllText(openFileDialog1.FileName);
         }
         /// <summary>
@@ -89,10 +88,7 @@ namespace Software_assignment
         /// </summary>
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            Console.WriteLine(saveFileDialog1.FileName);
             File.WriteAllText(saveFileDialog1.FileName, richTextBox1.Text);
-
-
         }
     }
 }

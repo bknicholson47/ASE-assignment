@@ -7,7 +7,7 @@ namespace Unit_Tests
     public class UnitTestRectangle
     {
         [TestMethod]
-        public void isNotNull()
+        public void Test()
         {
             // arrange
             var i = 50;

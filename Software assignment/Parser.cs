@@ -46,7 +46,7 @@ namespace Software_assignment
                     Rectangle e = new Rectangle(int.Parse(commands[1]), int.Parse(commands[2]), int.Parse(commands[3]), int.Parse(commands[4]));
                     if (!noDraw) e.draw(bmG, pen.getPen(), pen.getFill());
                     break;
-                case "positionpen":
+                case "moveto":
                     if (!noDraw) pen.moveTo(int.Parse(commands[1]), int.Parse(commands[2]));
                     break;
                 case "drawto":

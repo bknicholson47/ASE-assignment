@@ -7,19 +7,30 @@ namespace Unit_Tests
     public class UnitTestReset
     { 
         [TestMethod]
-        public void isNotNull()
+        public void Test()
         {
             // arrange
             Bitmap myBitmap = new Bitmap(600, 500);
-            userPen pen = new userPen(Color.Black, 0, 0, 1, true);
             Graphics bmG;
             bmG = Graphics.FromImage(myBitmap);
+            userPen pen = new userPen(Color.Black, 0, 0, 1, true);
+            Parser p = new Parser(bmG, pen);
+            p.ParseCommand("moveto 50 50", "", false);
+
+            Bitmap myBitmap2 = new Bitmap(600, 500);
+            Graphics bmG2;
+            bmG2 = Graphics.FromImage(myBitmap2);
+            userPen pen2 = new userPen(Color.Black, 0, 0, 1, true);
+            pen2.drawTo(bmG2, 25, 25);
 
             // act
-            Parser p = new Parser(bmG,pen);
+            p.ParseCommand("reset", "", false);
+            p.ParseCommand("drawto 25 25", "", false);
+
+
 
             // assert
-            Assert.IsNotNull(p);
+            Assert.AreEqual(myBitmap2.GetPixel(1,1), myBitmap.GetPixel(1,1));
         }
     }
 }
