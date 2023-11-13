@@ -67,6 +67,7 @@ namespace Software_assignment
         /// </summary>
         private void buttonSave_Click(object sender, EventArgs e)
         {
+            saveFileDialog1.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
             saveFileDialog1.ShowDialog();  
         }
         /// <summary>
@@ -74,6 +75,7 @@ namespace Software_assignment
         /// </summary>
         private void buttonLoad_Click(object sender, EventArgs e)
         {
+            openFileDialog1.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
             openFileDialog1.ShowDialog();
         }
         /// <summary>

@@ -7,19 +7,17 @@ namespace Unit_Tests
     public class UnitTestSave
     { 
         [TestMethod]
-        public void isNotNull()
+        public void Test()
         {
             // arrange
-            Bitmap myBitmap = new Bitmap(600, 500);
-            userPen pen = new userPen(Color.Black, 0, 0, 1, true);
-            Graphics bmG;
-            bmG = Graphics.FromImage(myBitmap);
+            var programbox = "this is a dummy file";
+            var FileName = "./TestSave.txt";
 
             // act
-            Parser p = new Parser(bmG,pen);
+            File.WriteAllText(FileName, programbox);
 
             // assert
-            Assert.IsNotNull(p);
+            Assert.AreEqual(programbox, File.ReadAllText(FileName));
         }
     }
 }
