@@ -7,19 +7,21 @@ namespace Unit_Tests
     public class UnitTestCommandLine
     { 
         [TestMethod]
-        public void isNotNull()
+        public void Test()
         {
             // arrange
             Bitmap myBitmap = new Bitmap(600, 500);
-            userPen pen = new userPen(Color.Black, 0, 0, 1, true);
             Graphics bmG;
             bmG = Graphics.FromImage(myBitmap);
+            userPen pen = new userPen(Color.Black, 0, 0, 1, true);
+            Parser p = new Parser(bmG, pen);
+            string textbox = "command input";
 
             // act
-            Parser p = new Parser(bmG,pen);
+            var output = p.ParseCommand(textbox, "", false);
 
             // assert
-            Assert.IsNotNull(p);
+            Assert.AreNotEqual("", output);
         }
     }
 }
