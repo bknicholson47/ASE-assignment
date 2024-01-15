@@ -1,3 +1,4 @@
+using Microsoft.VisualStudio.TestPlatform.Utilities;
 using Software_assignment;
 using System.Drawing;
 
@@ -37,7 +38,6 @@ namespace Unit_Tests
             p.ParseCommand("var Test = 1337", " ", false, 0);
             output = p.ParseCommand("varprint Test", "", false, 0);
             Assert.AreEqual("\nVariable 'Test' = 1337", output);
-            Assert.IsNotNull(p);
         }
         [TestMethod]
         public void MethodsCommand()// done
@@ -62,12 +62,20 @@ namespace Unit_Tests
             userPen pen = new userPen(Color.Black, 0, 0, 1, true);
             Graphics bmG;
             bmG = Graphics.FromImage(myBitmap);
+            string output;
+            string progwindow = 
+                "var a = 10" +
+                "\nloop 5" +
+                "\nvar a = a + 10" +
+                "\nendloop";
 
             // act
             Parser p = new Parser(bmG, pen);
+            p.ParseCommand("run", progwindow, false, 0);
+            output = p.ParseCommand("varprint a", progwindow, false, 0);
 
             // assert
-            Assert.IsNotNull(p);
+            Assert.AreEqual("\nVariable 'a' = 70", output);
         }
         [TestMethod]
         public void ifCommand()// done
