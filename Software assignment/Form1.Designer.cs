@@ -30,15 +30,16 @@
         {
             this.Run = new System.Windows.Forms.Button();
             this.Syntax = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            Form1.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonLoad = new System.Windows.Forms.Button();
-            this.richTextBoxOutput = new System.Windows.Forms.RichTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            Form1.richTextBoxOutput = new System.Windows.Forms.RichTextBox();
+            this.newProgWind = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(Form1.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Run
@@ -63,13 +64,13 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(585, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(600, 500);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            Form1.pictureBox1.BackColor = System.Drawing.Color.White;
+            Form1.pictureBox1.Location = new System.Drawing.Point(585, 12);
+            Form1.pictureBox1.Name = "pictureBox1";
+            Form1.pictureBox1.Size = new System.Drawing.Size(600, 500);
+            Form1.pictureBox1.TabIndex = 2;
+            Form1.pictureBox1.TabStop = false;
+            Form1.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             // 
             // richTextBox1
             // 
@@ -118,29 +119,40 @@
             // 
             // richTextBoxOutput
             // 
-            this.richTextBoxOutput.Location = new System.Drawing.Point(12, 576);
-            this.richTextBoxOutput.Name = "richTextBoxOutput";
-            this.richTextBoxOutput.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBoxOutput.Size = new System.Drawing.Size(530, 96);
-            this.richTextBoxOutput.TabIndex = 7;
-            this.richTextBoxOutput.Text = "";
+            Form1.richTextBoxOutput.Location = new System.Drawing.Point(12, 576);
+            Form1.richTextBoxOutput.Name = "richTextBoxOutput";
+            Form1.richTextBoxOutput.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            Form1.richTextBoxOutput.Size = new System.Drawing.Size(530, 96);
+            Form1.richTextBoxOutput.TabIndex = 7;
+            Form1.richTextBoxOutput.Text = "";
+            // 
+            // newProgWind
+            // 
+            this.newProgWind.Location = new System.Drawing.Point(12, 518);
+            this.newProgWind.Name = "newProgWind";
+            this.newProgWind.Size = new System.Drawing.Size(141, 23);
+            this.newProgWind.TabIndex = 8;
+            this.newProgWind.Text = "New Program Window";
+            this.newProgWind.UseVisualStyleBackColor = true;
+            this.newProgWind.Click += new System.EventHandler(this.newProgWind_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1210, 687);
-            this.Controls.Add(this.richTextBoxOutput);
+            this.Controls.Add(this.newProgWind);
+            this.Controls.Add(Form1.richTextBoxOutput);
             this.Controls.Add(this.buttonLoad);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(Form1.pictureBox1);
             this.Controls.Add(this.Syntax);
             this.Controls.Add(this.Run);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(Form1.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,14 +162,15 @@
 
         private System.Windows.Forms.Button Run;
         private System.Windows.Forms.Button Syntax;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        static public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonLoad;
-        private System.Windows.Forms.RichTextBox richTextBoxOutput;
+        static public System.Windows.Forms.RichTextBox richTextBoxOutput;
+        private System.Windows.Forms.Button newProgWind;
     }
 }
 

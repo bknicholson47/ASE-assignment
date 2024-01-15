@@ -81,7 +81,7 @@
             </summary>
         </member>
         <member name="M:Software_assignment.Form1.buttonSave_Click(System.Object,System.EventArgs)">
-            <summary>
+            <summary>+
             The button that opens the save file dialogue.
             </summary>
         </member>

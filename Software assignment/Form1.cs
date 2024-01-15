@@ -7,21 +7,24 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Software_assignment
 {
-    public partial class Form1 : Form
+    public unsafe partial class Form1 : Form
     {
-        Bitmap myBitmap = new Bitmap(600, 500);
-        Bitmap CursorBitmap = new Bitmap(600, 500);
-        Graphics bmG;
-        userPen pen = new userPen(Color.Black,0,0,1,true);
+        static public Bitmap myBitmap = new Bitmap(600, 500);
+        static public Bitmap CursorBitmap = new Bitmap(600, 500);
+        static public Graphics bmG;
+        static public userPen pen = new userPen(Color.Black,0,0,1,true);
+        static public Parser Parse;
         CommandBehavior C;
         public Form1()
         {
             InitializeComponent();
             bmG = Graphics.FromImage(myBitmap);
+            Parse = new Parser(bmG, pen);
         }
 
         /// <summary>
@@ -41,7 +44,6 @@ namespace Software_assignment
         {
             string mytext = textBox1.Text;
             string prog = richTextBox1.Text;
-            Parser Parse = new Parser(bmG,pen);
             richTextBoxOutput.Text = richTextBoxOutput.Text + Parse.ParseCommand(mytext, prog, false);
             pictureBox1.Image = myBitmap;
 
@@ -62,7 +64,7 @@ namespace Software_assignment
         {
 
         }
-        /// <summary>
+        /// <summary>+
         /// The button that opens the save file dialogue.
         /// </summary>
         private void buttonSave_Click(object sender, EventArgs e)
@@ -91,6 +93,20 @@ namespace Software_assignment
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
             File.WriteAllText(saveFileDialog1.FileName, richTextBox1.Text);
+        }
+
+        private void newWindowThread()
+        {
+            ProgramWindow progform = new ProgramWindow();
+            progform.ShowDialog();
+            while (true) { }
+        }
+
+        private void newProgWind_Click(object sender, EventArgs e)
+        {
+            Thread newWindowThrd = new Thread(new ThreadStart(this.newWindowThread));
+            newWindowThrd.SetApartmentState(ApartmentState.STA);
+            newWindowThrd.Start();
         }
     }
 }

@@ -4,6 +4,43 @@
         <name>Software assignment</name>
     </assembly>
     <members>
+        <member name="M:Software_assignment.ProgramWindow.buttonSave_Click(System.Object,System.EventArgs)">
+            <summary>+
+            The button that opens the save file dialogue.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.ProgramWindow.buttonLoad_Click(System.Object,System.EventArgs)">
+            <summary>
+            The button that opens the load file dialogue.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.ProgramWindow.openFileDialog1_FileOk(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Opens the file from the load file dialogue.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.ProgramWindow.saveFileDialog1_FileOk(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Saves the file to the save file dialogue address.
+            </summary>
+        </member>
+        <member name="F:Software_assignment.ProgramWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.ProgramWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Software_assignment.ProgramWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="M:Software_assignment.userPen.#ctor(System.Drawing.Color,System.Int32,System.Int32,System.Int32,System.Boolean)">
             <summary>
             Initialises userpen parameters
@@ -81,7 +118,7 @@
             </summary>
         </member>
         <member name="M:Software_assignment.Form1.buttonSave_Click(System.Object,System.EventArgs)">
-            <summary>
+            <summary>+
             The button that opens the save file dialogue.
             </summary>
         </member>
