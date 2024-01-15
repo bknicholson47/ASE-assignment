@@ -44,7 +44,7 @@ namespace Software_assignment
         {
             string mytext = textBox1.Text;
             string prog = richTextBox1.Text;
-            richTextBoxOutput.Text = richTextBoxOutput.Text + Parse.ParseCommand(mytext, prog, false);
+            richTextBoxOutput.Text = richTextBoxOutput.Text + Parse.ParseCommand(mytext, prog, false, 0);
             pictureBox1.Image = myBitmap;
 
         }
@@ -57,7 +57,7 @@ namespace Software_assignment
             string mytext = textBox1.Text;
             string prog = richTextBox1.Text;
             Parser Parse = new Parser(bmG,pen);
-            richTextBoxOutput.Text = richTextBoxOutput.Text + Parse.ParseCommand("syntax", prog, false);
+            richTextBoxOutput.Text = richTextBoxOutput.Text + Parse.ParseCommand("syntax", prog, false, 0);
 
         }
         private void textBox1_TextChanged(object sender, EventArgs e)

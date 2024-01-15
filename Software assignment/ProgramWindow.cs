@@ -23,7 +23,7 @@ namespace Software_assignment
         {
             string mytext = textBox1.Text;
             string prog = richTextBox1.Text;
-            Form1.richTextBoxOutput.Invoke((Action)delegate { Form1.richTextBoxOutput.Text = Form1.richTextBoxOutput.Text + Parse.ParseCommand(mytext, prog, false); });
+            Form1.richTextBoxOutput.Invoke((Action)delegate { Form1.richTextBoxOutput.Text = Form1.richTextBoxOutput.Text + Parse.ParseCommand(mytext, prog, false, 0); });
             //Form1.richTextBoxOutput.Text = Form1.richTextBoxOutput.Text + Form1.Parse.ParseCommand(mytext, prog, false);
             Form1.pictureBox1.Invoke((Action)delegate { Form1.pictureBox1.Image = Form1.myBitmap; });
             //Form1.pictureBox1.Image = Form1.myBitmap;

@@ -161,7 +161,7 @@
             <param name="command">String command from user input box.</param>
             <returns>Nothing.</returns>
         </member>
-        <member name="M:Software_assignment.Parser.ParseCommand(System.String,System.String,System.Boolean)">
+        <member name="M:Software_assignment.Parser.ParseCommand(System.String,System.String,System.Boolean,System.Int32)">
             <summary>
             Parses the user inputted command and executes it returning nothing.
             </summary>
