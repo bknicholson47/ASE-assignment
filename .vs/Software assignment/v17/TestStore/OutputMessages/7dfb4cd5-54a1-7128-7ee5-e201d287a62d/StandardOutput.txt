@@ -1,0 +1,48 @@
+line:0> run. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:0> var a = 10. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:1> loop 10. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:2> if a < 50. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:3> var a = a + 10. ifdepth: 1. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:4> endif. ifdepth: 1. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:5> endloop. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:2> if a < 50. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:3> var a = a + 10. ifdepth: 1. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:4> endif. ifdepth: 1. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:5> endloop. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:2> if a < 50. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:3> var a = a + 10. ifdepth: 1. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:4> endif. ifdepth: 1. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:5> endloop. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:2> if a < 50. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:3> var a = a + 10. ifdepth: 1. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:4> endif. ifdepth: 1. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:5> endloop. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:2> if a < 50. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:3> var a = a + 10. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:4> endif. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:5> endloop. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:2> if a < 50. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:3> var a = a + 10. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:4> endif. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:5> endloop. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:2> if a < 50. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:3> var a = a + 10. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:4> endif. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:5> endloop. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:2> if a < 50. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:3> var a = a + 10. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:4> endif. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:5> endloop. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:2> if a < 50. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:3> var a = a + 10. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:4> endif. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:5> endloop. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:2> if a < 50. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:3> var a = a + 10. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:4> endif. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:5> endloop. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:2> if a < 50. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:3> var a = a + 10. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:4> endif. ifdepth: 1. ifstate: False. methoddeclr: False. method: False. endmethod: False
+line:5> endloop. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False
+line:0> varprint a. ifdepth: 0. ifstate: True. methoddeclr: False. method: False. endmethod: False

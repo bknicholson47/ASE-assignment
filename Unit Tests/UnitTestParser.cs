@@ -47,12 +47,25 @@ namespace Unit_Tests
             userPen pen = new userPen(Color.Black, 0, 0, 1, true);
             Graphics bmG;
             bmG = Graphics.FromImage(myBitmap);
+            string output;
+            string progwindow =
+                "var a = 10" +
+                "\nmethod Mymethod ()" +
+                "\nvar a = a + 10" +
+                "\nendmethod" +
+                "\nMymethod ()" +
+                "\nMymethod ()" +
+                "\nMymethod ()" +
+                "\nMymethod ()" +
+                "\n";
 
             // act
             Parser p = new Parser(bmG, pen);
+            p.ParseCommand("run", progwindow, false, 0);
+            output = p.ParseCommand("varprint a", progwindow, false, 0);
 
             // assert
-            Assert.IsNotNull(p);
+            Assert.AreEqual("\nVariable 'a' = 50", output);
         }
         [TestMethod]
         public void LoopCommand()// done
@@ -85,12 +98,22 @@ namespace Unit_Tests
             userPen pen = new userPen(Color.Black, 0, 0, 1, true);
             Graphics bmG;
             bmG = Graphics.FromImage(myBitmap);
+            string output;
+            string progwindow =
+                "var a = 10" +
+                "\nloop 10" +
+                "\nif a < 50" +
+                "\nvar a = a + 10" +
+                "\nendif" +
+                "\nendloop";
 
             // act
             Parser p = new Parser(bmG, pen);
+            p.ParseCommand("run", progwindow, false, 0);
+            output = p.ParseCommand("varprint a", progwindow, false, 0);
 
             // assert
-            Assert.IsNotNull(p);
+            Assert.AreEqual("\nVariable 'a' = 50", output);
         }
     }
 }

@@ -166,27 +166,30 @@
         </member>
         <member name="F:Software_assignment.Parser.stepdelay">
             <summary>
-            Saves the file to the save file dialogue address.
+            Delay in ms between actions to show the ability to use both windows at same time.
             </summary>
         </member>
         <member name="F:Software_assignment.Parser.loopCounter">
             <summary>
-            Saves the file to the save file dialogue address.
+            Variables required for loop command implementation.
+            Descriptive labels.
             </summary>
         </member>
         <member name="F:Software_assignment.Parser.ifCounter">
             <summary>
-            Saves the file to the save file dialogue address.
+            Variables required for if command implementation.
+            Descriptive labels.
             </summary>
         </member>
         <member name="F:Software_assignment.Parser.methodState">
             <summary>
-            Saves the file to the save file dialogue address.
+            Variables required for method command implementation.
+            Descriptive labels.
             </summary>
         </member>
         <member name="F:Software_assignment.Parser.Variables">
             <summary>
-            Saves the file to the save file dialogue address.
+            keypair list that stores global variables for the var command.
             </summary>
         </member>
         <member name="F:Software_assignment.Parser.commandNames">
