@@ -1,0 +1,5 @@
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net5.0\Unit Tests.csproj.AssemblyReference.cache
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net5.0\Unit Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net5.0\Unit Tests.AssemblyInfoInputs.cache
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net5.0\Unit Tests.AssemblyInfo.cs
+C:\Users\loli hentai\source\repos\ASE-assignment\Software assignment\Unit Tests\obj\Debug\net5.0\Unit Tests.csproj.CoreCompileInputs.cache

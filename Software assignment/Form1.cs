@@ -99,10 +99,9 @@ namespace Software_assignment
         {
             ProgramWindow progform = new ProgramWindow();
             progform.ShowDialog();
-            while (true) { }
         }
 
-        private void newProgWind_Click(object sender, EventArgs e)
+        public void newProgWind_Click(object sender, EventArgs e)
         {
             Thread newWindowThrd = new Thread(new ThreadStart(this.newWindowThread));
             newWindowThrd.SetApartmentState(ApartmentState.STA);

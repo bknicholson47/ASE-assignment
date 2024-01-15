@@ -17,7 +17,7 @@ namespace Unit_Tests
             Parser p = new Parser(bmG, pen);
 
             // act
-            p.ParseCommand("fill off", "", false);
+            p.ParseCommand("fill off", "", false, 0);
 
             // assert
             Assert.AreEqual(false, pen.getFill());

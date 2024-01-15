@@ -18,7 +18,7 @@ namespace Unit_Tests
             string textbox = "command input";
 
             // act
-            var output = p.ParseCommand(textbox, "", false);
+            var output = p.ParseCommand(textbox, "", false, 0);
 
             // assert
             Assert.AreNotEqual("", output);

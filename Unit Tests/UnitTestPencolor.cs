@@ -17,7 +17,7 @@ namespace Unit_Tests
             Parser p = new Parser(bmG, pen);
 
             // act
-            p.ParseCommand("pencolor Red", "", false);
+            p.ParseCommand("pencolor Red", "", false, 0);
 
             // assert
             Assert.AreEqual(Color.Red, pen.getPen().Color);

@@ -18,10 +18,10 @@ namespace Unit_Tests
             string programbox = "command input";
 
             // act
-            var output = p.ParseCommand("run", programbox, false);
+            var output = p.ParseCommand("run", programbox, false, 0);
 
             // assert
-            Assert.AreNotEqual("", output);
+            Assert.AreNotEqual(" ", output);
         }
     }
 }

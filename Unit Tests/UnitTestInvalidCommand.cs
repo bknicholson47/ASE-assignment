@@ -17,7 +17,7 @@ namespace Unit_Tests
             Parser p = new Parser(bmG, pen);
 
             // act
-            var output = p.ParseCommand("cloer", "", false);
+            var output = p.ParseCommand("cloer", " ", false, 0);
 
             // assert
             Assert.AreEqual("\ncloer not recognised", output);

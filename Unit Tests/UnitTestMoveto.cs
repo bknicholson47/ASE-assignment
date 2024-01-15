@@ -23,10 +23,10 @@ namespace Unit_Tests
             pen2.drawTo(bmG2, 25, 25);
 
             // act
-            p.ParseCommand("moveto 50 50", "", false);
+            p.ParseCommand("moveto 50 50", "", false, 0);
 
             // assert
-            p.ParseCommand("drawto 25 25", "", false);
+            p.ParseCommand("drawto 25 25", "", false, 0);
             Assert.AreNotEqual(myBitmap2.GetPixel(1, 1), myBitmap.GetPixel(1, 1));
         }
     }

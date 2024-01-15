@@ -17,7 +17,7 @@ namespace Unit_Tests
             Parser p = new Parser(bmG, pen);
 
             // act
-            p.ParseCommand("drawto 10 10", "", false);
+            p.ParseCommand("drawto 10 10", "", false, 0);
 
             // assert
             Assert.AreNotEqual(new Bitmap(600, 500), myBitmap);
