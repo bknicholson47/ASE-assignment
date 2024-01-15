@@ -137,6 +137,16 @@
             Saves the file to the save file dialogue address.
             </summary>
         </member>
+        <member name="M:Software_assignment.Form1.newWindowThread">
+            <summary>
+            The thread responsible for running a new instance of ProgramWindow.
+            </summary>
+        </member>
+        <member name="M:Software_assignment.Form1.newProgWind_Click(System.Object,System.EventArgs)">
+            <summary>
+            Responsible for creating a new thread and assigning it the newWindowThread task.
+            </summary>
+        </member>
         <member name="F:Software_assignment.Form1.components">
             <summary>
             Required designer variable.
@@ -154,6 +164,36 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="F:Software_assignment.Parser.stepdelay">
+            <summary>
+            Saves the file to the save file dialogue address.
+            </summary>
+        </member>
+        <member name="F:Software_assignment.Parser.loopCounter">
+            <summary>
+            Saves the file to the save file dialogue address.
+            </summary>
+        </member>
+        <member name="F:Software_assignment.Parser.ifCounter">
+            <summary>
+            Saves the file to the save file dialogue address.
+            </summary>
+        </member>
+        <member name="F:Software_assignment.Parser.methodState">
+            <summary>
+            Saves the file to the save file dialogue address.
+            </summary>
+        </member>
+        <member name="F:Software_assignment.Parser.Variables">
+            <summary>
+            Saves the file to the save file dialogue address.
+            </summary>
+        </member>
+        <member name="F:Software_assignment.Parser.commandNames">
+            <summary>
+            Command names to compare to to ensure no duplicates.
+            </summary>
+        </member>
         <member name="M:Software_assignment.Parser.#ctor(System.Drawing.Graphics,Software_assignment.userPen)">
             <summary>
             Parses the user inputted command and executes it returning nothing.
@@ -165,7 +205,10 @@
             <summary>
             Parses the user inputted command and executes it returning nothing.
             </summary>
-            <param name="command">String command from user input box.</param>
+            <param name="command">String Command from user input box.</param>
+            <param name="prog">String Command from user program box.</param>
+            <param name="noDraw">Bool Disables output to canvas.</param>
+            <param name="line">Int Current program line.</param>
             <returns>Output log.</returns>
         </member>
         <member name="M:Software_assignment.Program.Main">

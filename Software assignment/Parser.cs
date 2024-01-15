@@ -11,14 +11,30 @@ namespace Software_assignment
     {
         Graphics bmG;
         userPen pen;
+
+        /// <summary>
+        /// Delay in ms between actions to show the ability to use both windows at same time.
+        /// </summary>
+        int stepdelay = 0;
+        /// <summary>
+        /// Variables required for loop command implementation.
+        /// Descriptive labels.
+        /// </summary>
         int loopCounter;
         int loopDepth;
         bool loopStatus;
+        /// <summary>
+        /// Variables required for if command implementation.
+        /// Descriptive labels.
+        /// </summary>
         int ifCounter;
         bool ifStatus = true;
         bool currentIfStatus = false;
+        /// <summary>
+        /// Variables required for method command implementation.
+        /// Descriptive labels.
+        /// </summary>
         bool methodState = false;
-        int stepdelay = 0;
         int jumpcounter = 0;
         int programCounter = 0;
         bool endmethodstate = false;
@@ -27,7 +43,15 @@ namespace Software_assignment
         List<KeyValuePair<string, List<string>>> Methodvariables = new List<KeyValuePair<string, List<string>>>();
         List<int> programCounterStack = new List<int>();
         List<List<KeyValuePair<string, int>>> scopeVariablesStack = new List<List<KeyValuePair<string, int>>>();
+
+        /// <summary>
+        /// keypair list that stores global variables for the var command.
+        /// </summary>
         List<KeyValuePair<string, int>> Variables = new List<KeyValuePair<string, int>>();
+
+        /// <summary>
+        /// Command names to compare to to ensure no duplicates.
+        /// </summary>
         string[] commandNames = { 
             "circle",
             "triangle",
@@ -63,7 +87,10 @@ namespace Software_assignment
         /// <summary>
         /// Parses the user inputted command and executes it returning nothing.
         /// </summary>
-        /// <param name="command">String command from user input box.</param>
+        /// <param name="command">String Command from user input box.</param>
+        /// <param name="prog">String Command from user program box.</param>
+        /// <param name="noDraw">Bool Disables output to canvas.</param>
+        /// <param name="line">Int Current program line.</param>
         /// <returns>Output log.</returns>
         public String ParseCommand (string command, string prog, bool noDraw, int line)
         {

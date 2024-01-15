@@ -95,12 +95,18 @@ namespace Software_assignment
             File.WriteAllText(saveFileDialog1.FileName, richTextBox1.Text);
         }
 
+        /// <summary>
+        /// The thread responsible for running a new instance of ProgramWindow.
+        /// </summary>
         private void newWindowThread()
         {
             ProgramWindow progform = new ProgramWindow();
             progform.ShowDialog();
         }
 
+        /// <summary>
+        /// Responsible for creating a new thread and assigning it the newWindowThread task.
+        /// </summary>
         public void newProgWind_Click(object sender, EventArgs e)
         {
             Thread newWindowThrd = new Thread(new ThreadStart(this.newWindowThread));
