@@ -118,10 +118,59 @@ namespace Software_assignment
                         int ty2;
                         int tx3;
                         int ty3;
-                        if (!int.TryParse(commands[1], out tx1) | !int.TryParse(commands[2], out ty1) | !int.TryParse(commands[3], out tx2) | !int.TryParse(commands[4], out ty2) | !int.TryParse(commands[5], out tx3) | !int.TryParse(commands[6], out ty3))
+                        if (!int.TryParse(commands[1], out tx1))
                         {
-                            output = output + "\nInvalid input '" + command + "', valid syntax is 'triangle int int int int int int'";
-                            break;
+                            if (Variables.Find(kvp => kvp.Key == commands[1]).Key != commands[1])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            tx1 = Variables.Find(kvp => kvp.Key == commands[1]).Value;
+                        }
+                        if (!int.TryParse(commands[2], out ty1))
+                        {
+                            if (Variables.Find(kvp => kvp.Key == commands[2]).Key != commands[2])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            ty1 = Variables.Find(kvp => kvp.Key == commands[2]).Value;
+                        }
+                        if (!int.TryParse(commands[3], out tx2))
+                        {
+                            if (Variables.Find(kvp => kvp.Key == commands[3]).Key != commands[3])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            tx2 = Variables.Find(kvp => kvp.Key == commands[3]).Value;
+                        }
+                        if (!int.TryParse(commands[4], out ty2))
+                        {
+                            if (Variables.Find(kvp => kvp.Key == commands[4]).Key != commands[4])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            ty2 = Variables.Find(kvp => kvp.Key == commands[4]).Value;
+                        }
+                        if (!int.TryParse(commands[5], out tx3))
+                        {
+                            if (Variables.Find(kvp => kvp.Key == commands[5]).Key != commands[5])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            tx3 = Variables.Find(kvp => kvp.Key == commands[5]).Value;
+                        }
+                        if (!int.TryParse(commands[6], out ty3))
+                        {
+                            if (Variables.Find(kvp => kvp.Key == commands[6]).Key != commands[6])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            ty3 = Variables.Find(kvp => kvp.Key == commands[6]).Value;
                         }
                         Triangle d = new Triangle(tx1, ty1, tx2, ty2, tx3, ty3);
                         if (!noDraw) d.draw(bmG, pen.getPen(), pen.getFill());
@@ -136,10 +185,41 @@ namespace Software_assignment
                         int ry;
                         int rw;
                         int rh;
-                        if (!int.TryParse(commands[1], out rx) | !int.TryParse(commands[2], out ry) | !int.TryParse(commands[3], out rw) | !int.TryParse(commands[4], out rh))
+                        if (!int.TryParse(commands[1], out rx))
                         {
-                            output = output + "\nInvalid input '" + command + "', valid syntax is 'rectangle int int int int'";
-                            break;
+                            if (Variables.Find(kvp => kvp.Key == commands[1]).Key != commands[1])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            rx = Variables.Find(kvp => kvp.Key == commands[1]).Value;
+                        }
+                        if (!int.TryParse(commands[2], out ry))
+                        {
+                            if (Variables.Find(kvp => kvp.Key == commands[2]).Key != commands[2])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            ry = Variables.Find(kvp => kvp.Key == commands[2]).Value;
+                        }
+                        if (!int.TryParse(commands[3], out rw))
+                        {
+                            if (Variables.Find(kvp => kvp.Key == commands[3]).Key != commands[3])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            rw = Variables.Find(kvp => kvp.Key == commands[3]).Value;
+                        }
+                        if (!int.TryParse(commands[4], out rh))
+                        {
+                            if (Variables.Find(kvp => kvp.Key == commands[4]).Key != commands[4])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            rh = Variables.Find(kvp => kvp.Key == commands[4]).Value;
                         }
                         Rectangle e = new Rectangle(rx, ry, rw, rh);
                         if (!noDraw) e.draw(bmG, pen.getPen(), pen.getFill());
@@ -152,10 +232,23 @@ namespace Software_assignment
                         }
                         int mx;
                         int my;
-                        if (!int.TryParse(commands[1], out mx) | !int.TryParse(commands[2], out my))
+                        if (!int.TryParse(commands[1], out mx))
                         {
-                            output = output + "\nInvalid input '" + command + "', valid syntax is 'moveto int int'";
-                            break;
+                            if (Variables.Find(kvp => kvp.Key == commands[1]).Key != commands[1])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            mx = Variables.Find(kvp => kvp.Key == commands[1]).Value;
+                        }
+                        if (!int.TryParse(commands[2], out my))
+                        {
+                            if (Variables.Find(kvp => kvp.Key == commands[2]).Key != commands[2])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            my = Variables.Find(kvp => kvp.Key == commands[2]).Value;
                         }
                         if (!noDraw) pen.moveTo(mx, my);
                         break;
@@ -167,10 +260,23 @@ namespace Software_assignment
                         }
                         int dx;
                         int dy;
-                        if (!int.TryParse(commands[1], out dx) | !int.TryParse(commands[2], out dy))
+                        if (!int.TryParse(commands[1], out dx))
                         {
-                            output = output + "\nInvalid input '" + command + "', valid syntax is 'moveto int int'";
-                            break;
+                            if (Variables.Find(kvp => kvp.Key == commands[1]).Key != commands[1])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            dx = Variables.Find(kvp => kvp.Key == commands[1]).Value;
+                        }
+                        if (!int.TryParse(commands[2], out dy))
+                        {
+                            if (Variables.Find(kvp => kvp.Key == commands[2]).Key != commands[2])
+                            {
+                                output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                break;
+                            }
+                            dy = Variables.Find(kvp => kvp.Key == commands[2]).Value;
                         }
                         if (!noDraw) pen.drawTo(bmG, dx, dy);
                         break;
@@ -276,8 +382,12 @@ namespace Software_assignment
                             }
                             if (!int.TryParse(commands[3], out vi))
                             {
-                                output = output + "\nInvalid input '" + command + "', valid syntax is 'var string = int | var string = string +-*/%^ int'";
-                                break;
+                                if (Variables.Find(kvp => kvp.Key == commands[3]).Key != commands[3])
+                                {
+                                    output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                    break;
+                                }
+                                vi = Variables.Find(kvp => kvp.Key == commands[3]).Value;
                             }
                             if (Variables.Find(kvp => kvp.Key == commands[1]).Key == commands[1])
                             {
@@ -299,8 +409,12 @@ namespace Software_assignment
                             }
                             if (!int.TryParse(commands[5], out mi))
                             {
-                                output = output + "\nInvalid input '" + command + "', valid syntax is 'var string = int | var string = string +-*/%^ int'";
-                                break;
+                                if (Variables.Find(kvp => kvp.Key == commands[5]).Key != commands[5])
+                                {
+                                    output = output + "\nInvalid input '" + command + "', valid syntax is 'circle int int int'";
+                                    break;
+                                }
+                                mi = Variables.Find(kvp => kvp.Key == commands[5]).Value;
                             }
                             switch (commands[4])
                             {
